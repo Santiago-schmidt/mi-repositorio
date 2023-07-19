@@ -1,0 +1,223 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+}
+
+
+body {
+    font-size: 16px;
+    color: #301212;
+    background-color: #608fad;
+}
+
+/* header {
+    width: 100%;
+    background-color: rgb(78, 98, 153);
+    display: flex;
+    align-items: center;
+    flex-flow: row wrap;
+    background-image: url(./imagenes/banner-h2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    margin: 0.15%;
+    margin-bottom: 1%;
+} */
+
+/* Logo de inicio */
+
+.contenedor-logo {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 1%;
+}
+
+#logo-inicio {
+    height: 160px ;
+    width: 180px;
+    display: flex;
+    border: rgb(33, 118, 151) solid 3px;
+    border-radius: 100%;
+}
+
+
+
+/* Menu de Navegación */
+/* .contenedor-menu {
+    font-family: Georgia, 'Times New Roman', Times, serif ;
+    display: flex;
+    flex-flow: row wrap;
+    width: 500px;
+    height: 160px;
+    margin-right: 10px;
+}
+.menu {
+    border: 5px none rgb(46, 201, 248);
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: left;
+} */
+
+
+
+.contenedor-menu2 {
+    border: 3px none beige;
+    display:flex;
+    flex-flow: row wrap;
+    /* position: fixed; */
+    position:fixed;
+    top: 1%;
+    right:1%;
+    margin: 0.9%;
+}
+
+.menu2 {
+    display: flex;
+    flex-flow: column wrap;
+    list-style: none;
+    text-decoration: none;
+}
+
+/* 
+.listitem {
+    background-color: azure;
+    align-items: center;
+    font-size: 130%;
+    box-sizing:content-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;    
+    font-weight: bold;
+    padding: 1%;
+    margin: 1px;
+    display: flex;
+    border: 5px groove cadetblue;
+    border-radius: 100px;
+} */
+.listitem2 {
+    border: 4px none gray;
+    display: flex;
+}
+
+.redes {
+    height: 40px;
+    width: 40px;
+}
+
+/* Fin de Menu de navegación */
+
+a {
+    text-decoration: none;
+    color: brown;
+}
+
+.texto-bienvenida {
+    box-sizing: content-box;
+    text-align: center;
+    font-size: 35px;
+    text-decoration: underline;
+}
+.texto-bienvenida:hover {
+    color: wheat;
+    text-decoration: overline;
+    border: solid wheat;
+    border-radius: 40%;
+    background-color: rgb(93, 65, 218);
+}
+
+p {
+    text-align: center;
+    font-size: 27px;
+    color: darkblue;
+    font-weight: bolder;
+}
+/* 
+div {
+    display: flex;
+    width: 100%;
+    border: #301212 solid 3px;
+    justify-content: center;
+} */
+
+.img1 {
+    display: flex;
+    width: 100%;
+    padding: 0.4%;
+}
+
+@media only screen and (max-width: 991px) {
+    .contenedor-menu2 {
+        border: 3px none beige;
+        display:flex;
+        flex-flow: row wrap;
+        position:fixed;
+        top:35%;
+        right:1%;
+        margin: 0.9%;
+    }
+}
+
+@media only screen and (min-width: 992px){
+    #navbarNav {
+        border: none;
+        justify-content: center;
+        font-size: xx-large;
+        display: inline-flex;
+        box-sizing: border-box;
+        }
+
+        .nav-link:hover {
+            text-decoration: overline;
+            text-decoration-color: #608fad;
+            color: #75a5bd;
+        }
+
+        .nav-item:hover {
+            text-decoration: overline;
+            text-decoration-color: #608fad;
+            color: #75a5bd;
+        }
+
+        .nav-link:visited {
+            color: #75a5bd  ;
+            text-decoration-color: turquoise;
+        }
+    
+        .nav-item {
+            padding: 2%;
+            justify-content: center;
+            text-decoration: underline;
+        }
+    
+}
+
+@media only screen and (max-width: 500px) {
+    *{
+        justify-content: center;
+    }
+    header {
+        background-image: none;
+        display: flex;
+        height:max-content;
+    }
+    .menu {
+        justify-content: center;
+        height: auto;
+    }
+    .contenedor-menu {
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 790px) {
+    *{
+        justify-content: center;
+    }
+    header {
+        background-color: azure;
+    } 
+}
